@@ -1,12 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 100px;
+}
 
- body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 100px;
-
-  }
-  
-  /* header {
+/* header {
     background-color: pink;
     padding: 20px;
     display: flex;
@@ -14,41 +11,68 @@
     justify-content: space-between;
   } */
 
-  header {
-    background-color: blue;
-    padding: 200px;
-    justify-content: center;
-   
-  }
-  
-  .logo {
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
-    padding: 40px;
-  }
- 
-form
-{
-  margin:  0 auto;
-  display: block;
-  text-align: center;
-  width: 800px;
-   
+header {
+  background-color: rgba(29, 155, 205, 0.5);
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
-  input[type="text"] {
-    width: 60%;
-    padding: 15px;
-    font-size: 16px;
-    margin-right: 8px;
-    border: none;
-    border-radius: 500px;
-    outline: none;
-    
-  }
-  
-  button[type="submit"] {
+.logo {
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 90px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-bar {
+  width: 70%;
+  max-width: 600px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+form {
+  margin: 0 auto;
+  display: flux;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  background: transparent;
+  width: 80%;
+  padding: 15px;
+  max-width: 600px;
+  font-size: 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 500px;
+  outline: none;
+  color: black;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+
+
+/* button[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -57,60 +81,78 @@ form
     cursor: pointer;
     font-size: 16px;
     justify-content: center;
-  }
-  
-  
-  .categories {
-    display:flex;
-    justify-content:center;
-    text-align: right;
-    padding: 20px;
-  }
+  } */
+
+.search-bar button img {
+  width: 25px;
+}
+
+.search-bar button {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  background: grey;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+/* .search-bar button:hover {
+  background-color: ;
+} */
 
 
-  .categories a {
-    background-color: #f2f2f2;
-    color: black;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    display: flex;
-    align-items:center;
-  }
-  
-  .categories a:hover {
-    background-color: #ddd;
-  }
-  
-  .categories a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .categories img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-    text-align: center;
-  }
-  
-  .categories span {
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .content {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
+.categories {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  padding: 20px;
+}
+
+
+.categories a {
+  /* background-color: #f2f2f2; */
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.categories a:hover {
+  background-color: rgba(169,169,169,0.4);
+}
+
+.categories a.active {
+  background-color: #4CAF50;
+  /* color: white; */
+}
+
+.categories img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.categories span {
+  font-size: 18px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
