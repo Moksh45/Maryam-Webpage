@@ -2,34 +2,50 @@
  body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 100px;
+
   }
   
-  header {
-    background-color: #f2f2f2;
+  /* header {
+    background-color: pink;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  } */
+
+  header {
+    background-color: blue;
+    padding: 200px;
+    justify-content: center;
+   
   }
   
   .logo {
-    font-size: 32px;
+    font-size: 80px;
     font-weight: bold;
+    text-align: center;
+    padding: 40px;
   }
-  
-  form {
-    display: flex;
-  }
-  
+ 
+form
+{
+  margin:  0 auto;
+  display: block;
+  text-align: center;
+  width: 800px;
+   
+}
+
   input[type="text"] {
     width: 60%;
-    padding: 12px;
+    padding: 15px;
     font-size: 16px;
     margin-right: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 500px;
     outline: none;
+    
   }
   
   button[type="submit"] {
@@ -40,36 +56,61 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    justify-content: center;
   }
+  
   
   .categories {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    display:flex;
+    justify-content:center;
+    text-align: right;
+    padding: 20px;
   }
-  
+
+
   .categories a {
     background-color: #f2f2f2;
     color: black;
     padding: 12px 24px;
     text-decoration: none;
-    margin: 0 8px;
     border-radius: 5px;
     font-size: 16px;
+    display: flex;
+    align-items:center;
   }
   
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-
-.categories a:hover {
+  .categories a:hover {
     background-color: #ddd;
   }
   
   .categories a.active {
     background-color: #4CAF50;
     color: white;
+  }
+  
+  .categories img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .categories span {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
   }
   

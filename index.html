@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Qwant Homepage Clone</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
       body {
@@ -12,40 +13,36 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <header>
+   
       <div class="logo">Qwant</div>
+	  <div class="form">
       <form>
-        <input type="text" id="searchInput" placeholder="Search...">
+        <input type="text" id="searchInput" class="query" value="" placeholder="Search...">
         <button type="submit">Go</button>
       </form>
-    </header>
-	<main>
+    </div>
 		<div class="categories">
 		  <a href="#">
-			<img src="web.png" alt="Web">
-			<span>Web</span>
-		  </a>
-		  <a href="#">
-			<img src="images.png" alt="Images">
+			<img src="image/image_icon.png" alt="Images">
 			<span>Images</span>
 		  </a>
 		  <a href="#">
-			<img src="news.png" alt="News">
+			<img src="image/news_icon.png" alt="News">
 			<span>News</span>
 		  </a>
 		  <a href="#">
-			<img src="social.png" alt="Social">
+			<img src="image/social-icon.png" alt="Social">
 			<span>Social</span>
 		  </a>
 		  <a href="#">
-			<img src="shopping.png" alt="Shopping">
-			<span>Shopping</span>
+			<img src="image/video_icon.png" alt="Shopping">
+			<span>Video</span>
 		  </a>
 		</div>
 		<div class="content">
 		  <!-- content goes here -->
-		</div>
-	  </main>	  
+		</div>  
+		</header>
     <footer>
       <p>&copy; 2023 Qwant</p>
     </footer>
