@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Homepage </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="script.js"></script>
-</head>
-
-<body>
-	<header>
-		<div class="logo">Webpage</div>
-		<div class="form">
-			<form action = "https://www.google.com/search" method="get" class="search-bar">
-				<input type="text" placeholder="Search anything" name = "q">
-				<button type="submit"><img src="image/search.png"></button>
-			</form>
-		</div>
-		<div class="categories"> 
-			<a href="#">
-				<img src="image/image_icon.png" alt="Images">
-				<span>Images</span>
-			</a>
-			<a href="#">
-				<img src="image/news_icon.png" alt="News">
-				<span>News</span>
-			</a>
-			<a href="#">
-				<img src="image/social-icon.png" alt="Social">
-				<span>Social</span>
-			</a>
-			<a href="#">
-				<img src="image/video_icon.png" alt="Shopping">
-				<span>Video</span>
-			</a>
-		</div>
-		<div class="content">
-			<!-- content goes here -->
-		</div>
-	</header>
-	<!-- <footer>
-		<p>&copy; 2023 Qwant</p>
-	</footer> -->
-</body>
-
+  <body>
+    <header>
+      <div class="logo">Webpage</div>
+        <form action="index2.html" class="search-bar" id="form">
+          <input type="text" id="myText" placeholder="Search anything" />
+          <button type="submit">
+            <img src="image/search.png" />
+          </button>
+        </form>
+      <div class="categories">
+        <a href="#">
+          <img src="image/image_icon.png" alt="Images" />
+          <span>Images</span>
+        </a>
+        <a href="#">
+          <img src="image/news_icon.png" alt="News" />
+          <span>News</span>
+        </a>
+        <a href="#">
+          <img src="image/social-icon.png" alt="Social" />
+          <span>Social</span>
+        </a>
+        <a href="#">
+          <img src="image/video_icon.png" alt="Shopping" />
+          <span>Video</span>
+        </a>
+      </div>
+      <div class="content">
+        <!-- content goes here -->
+      </div>
+      <div class="root"></div>
+    </header>
+    <script src="script.js" type="module"></script>
+  </body>
 </html>

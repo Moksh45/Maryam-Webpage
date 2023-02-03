@@ -1,9 +1,11 @@
-let query = document.querySelector('.query');
-let submit = document.querySelector('.submit')
+const input = document.getElementById("myText");
 
-submit.onclick = function()
-{
-    let url = "https://www.qwant.com/?q="+query.value+"&t=web";
-    window.open(url);
-}
-  
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const searchInput = input.value;
+
+  localStorage.setItem("Input", searchInput);
+
+  window.location.href="index2.html";
+});
